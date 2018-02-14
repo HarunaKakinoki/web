@@ -94,9 +94,31 @@ footer {
     margin-left: auto;
 }
 .userInput h2 {
+<<<<<<< HEAD
   font-size: 26px;
 }
 .userInput p {
   font-size:20px;
 }
 /******************************/
+=======
+    text-align: center;
+}
+
+header {
+    background-color: dimgrey;
+    text-align: center;
+}
+
+.block1 h2 {
+    padding: 1em;
+    text-align: center;
+}
+
+.block1 form {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gainsboro;
+}
+>>>>>>> b7b6aff7d3bc06c33c324377a5367d53ddf5ff35
