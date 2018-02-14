@@ -3,20 +3,20 @@
 	<!--Starter page for project-->
     <title>Food Randomizer</title>
     <meta charset="utf-8">
-        
+
     <!-- CSS Files -->
     <link rel="stylesheet" href="CSS/base.css" type="text/css">
-        
+
     <script>
     var counter = 2;
 	onload=function() {
 		document.getElementById('submit').onclick=function(){
 			//user enter
 			var choices = document.getElementById('choices')
-			
+
 			//numbers of choice user wants
 			var n = document.getElementById('n')
-			
+
 			if(!isNaN(choices.value)){
 				alert('error')
 				return
@@ -25,7 +25,7 @@
 				alert('please enter a number')
 				return
 			}
-			
+
 			//display user's choices
 			var UserChoices = "Your choices <ul>"
 			var each = choices.value.split(" ")
@@ -34,7 +34,7 @@
 			}
 			UserChoices += "</ul>"
 			document.getElementById('d').innerHTML = UserChoices
-			
+
 			if (n.value > each.length) {
 				alert('not enough choices')
 				return;
@@ -52,24 +52,24 @@
 			document.getElementById('result').innerHTML = answer
 		}
 	}
-    
+
     function addBox() {
         var addBtn = document.getElementById('add')
         var input = '<input type="text" id="choices" name="food[]">'
         var inputBoxes = document.getElementsByClassName('newInput')
         if (counter == 8) {
-            document.getElementById('tooMuchInput').innerHTML = "you only allowed 8 boxes"   
+            document.getElementById('tooMuchInput').innerHTML = "you only allowed 8 boxes"
         } else {
             inputBoxes[counter].innerHTML = input
             counter++
         }
     }
 	</script>
-        
+
 	</head>
 
 	<body>
-        
+
     <!-- Keeping everything together -->
     <div class="wrapper">
         <div class="foodHeader">
@@ -93,10 +93,10 @@
 <!--
             <p>how many choice(number): <input type="text" id="n"></p>
 			-->
-            <div id="submit"><button type="button">Choose!</button></div> 
+      <div id="submit"><button type="button">Choose!</button></div>
 		  <p id="result"></p>
         </div>
-        
+
     </div> <!-- End of wrapper -->
 
     </body>

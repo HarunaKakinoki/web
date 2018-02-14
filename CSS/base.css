@@ -2,73 +2,101 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-size: 90%;
-    background-color: skyblue;
 }
 
+/************Footer**************/
 footer {
     width: 100%;
-    position: absolute;
+    height: 60px;
+    position: relative;
     bottom: 0;
     background-color: dimgrey;
 }
 
 .footer_content p {
+    padding: 10px;
     text-align: center;
 }
+/*****************************/
 
 .wrapper {
+    width: 100%;
     height: 100%;
+    height: auto;
+    min-height: 100%;
     position: relative;
+    padding-bottom: 100px;
+    background-image: url("back1.jpg");
 }
 
+/********Header*************/
 .foodHeader{
     background-color: dimgrey;
 }
 
 .foodHeader h1 {
+    font-size: 56px;
     text-align: center;
 }
-
-#questions {
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#questions form {
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-}
+/*****************************/
 
 .newinput {
-	margin-left: 5px;	
+	margin-left: 5px;
 }
 
-#add {
-	margin-left: 5px;		
+#add { /*add button*/
+	margin-left: 5px;
+  font-size: 18px;
+  display: inline-block;
+  border-radius:4px;
+  padding: 0.2em 1em;
+  text-decoration: none;
+  background: #668ad8;
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+}
+#add:active {
+  -ms-transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
 }
 
-#submit {
-	margin-left: 20px;	
-
+#submit { /*submit button*/
+  margin-left: 5px;
+  font-size: 22px;
+  display: inline-block;
+  border-radius:4px;
+  padding: 0.2em 1em;
+  text-decoration: none;
+  background: #668ad8;
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+}
+#submit:active {
+  -ms-transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
 }
 
+/********User input space********/
 .userInput {
     height: 400px;
-    background-color: burlywood;
-    width: 300px;
+    width: 500px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
-
 .userInput form {
     width: 200px;
     margin-right: auto;
     margin-left: auto;
 }
-
 .userInput h2 {
-    text-align: center;
+  font-size: 26px;
 }
+.userInput p {
+  font-size:20px;
+}
+/******************************/
